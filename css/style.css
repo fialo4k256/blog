@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918&family=Spectral+SC&display=swap');
+
 html {
     box-sizing: border-box;
 }
@@ -9,8 +11,12 @@ html {
 }
 
 body {
+    font-family: 'Spectral SC', serif;
     color: #39342E;
+    margin: 0;
 }
+
+/*header*/
 
 a{
     text-decoration: none;
@@ -33,7 +39,7 @@ ul {
     justify-content: center;
     align-items: center;
     padding: 30px 0;
-    min-height: 100px;
+    min-height: 80px;
 }
 
 .menu__list{
@@ -50,3 +56,41 @@ ul {
     gap: 0 20px;
 }
 
+/*first_screen*/
+
+.top {
+    background-image: url(../images/main-photo.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.top__inner {
+    color: #F6EAD1;
+    min-height: 500px;
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 1;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h2{
+    font-size: 42px;
+    line-height: 1;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.top__link {
+    margin-top: 30px;
+}
