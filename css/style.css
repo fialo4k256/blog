@@ -71,7 +71,10 @@ ul {
     max-width: 620px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
     
 }
 
@@ -89,8 +92,20 @@ h2{
     font-weight: 500;
     margin-bottom: 0;
     margin-top: 0;
+    padding-bottom: 30px;
 }
 
-.top__link {
-    margin-top: 30px;
+a:hover {
+    color: #ffaf92;
+}
+
+.blockquote {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 780px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: normal;
 }
