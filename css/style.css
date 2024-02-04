@@ -43,6 +43,21 @@ ul {
     min-height: 80px;
 }
 
+.button.menu__btn {
+    /*display: none;*/
+    width: 40px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button.menu__btn span {
+    background-color: #39342E;
+    width: 40px;
+    height: 2px;
+}
+
 .menu__list{
     display: flex;
     font-size: 16px;
@@ -124,6 +139,9 @@ a:hover {
 
     .header__inner {
         min-height: auto;
+        padding: 5px 0;
+        margin-left: 0px;
+        margin-right: 0px
     }
 
     .logo {
@@ -135,10 +153,14 @@ a:hover {
         height: 50%;
         transform: translateX(100%);
       }
+    
+      .user-actions {
+        gap: 0px;
+    }
 
       .user-actions__link img {
-        width: 75%;
-        height: 75%;
+        width: 50%;
+        height: 50%;
       }
 
     .header__inner {
@@ -156,13 +178,18 @@ a:hover {
         margin: 0 auto;
         align-items: center;
         font-size: 12px;
-        margin-left: 25px;
-        margin-right: 25px;
-        gap: 0 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        gap: 0 10px;
     }
 
     .top__inner {
         max-width: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        text-align: center;
+        margin: 0 auto;
     }
 
     h1 {
@@ -211,6 +238,26 @@ a:hover {
     }
 }
 
+@media (max-width: 860px) {
+    .menu__list {
+        display: none;
+    }
+
+    .button.menu__btn {
+        width: 40px;
+        height: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .button.menu__btn span {
+        background-color: #39342E;
+        width: 40px;
+        height: 2px;
+    }
+}
+
 @media (max-width: 768px) {
     
 }
@@ -222,3 +269,4 @@ a:hover {
 @media (max-width: 360px) {
     
 }
+
